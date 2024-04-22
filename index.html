@@ -1,58 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Skill Broadcasting</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-}
-.container {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-}
-.skill-card {
-display: inline-block;
-margin: 20px;
-padding: 20px;
-border: 1px solid #ddd;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.skill-card img {
-width: 50px;
-height: 50px;
-border-radius: 50%;
-margin: 10px;
-}
-.skill-card h3 {
-margin-top: 0;
-}
-.skill-card p {
-margin-bottom: 20px;
-}
-head {background-color: blue;
-     font-size: 30%;
-      font-family:Algerian fb;
-     }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Skill Broadcasting</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<style type="text/css">
-<div class="container">
-<h1>Skill Broadcasting</h1>
-<div class="skill-card">
-<img src="https://images.app.goo.gl/QHWdQaMAzeM8HdBe6" alt="WEB DEVELOPMENT"></img>
-<h3>WEB DEVELOPMENT</h3>
-<p>Developing of websites</p>
-</div>
-<div class="skill-card">
-<img src="https://images.app.goo.gl/dYAmaDsrHyEs3ajm8" alt="ETHICALHACKING">
-<h3>ETHICAL HACKING</h3>
-<p>Penetration and surveying</p>
-</div>
-Also data analysis 
-</div>
-    </style>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#eth-hacking">Ethical Hacking</a></li>
+				<li><a href="#data-analysis">Data Analysis</a></li>
+				<li><a href="#web-dev">Web Development</a></li>
+				<li><a href="#software-eng">Software Engineering</a></li>
+				<li><a href="#software-career">Software Career</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="eth-hacking">
+			<h2>Ethical Hacking</h2>
+			<p>Learn the art of ethical hacking and penetration testing.</p>
+			<button>Explore Courses</button>
+		</section>
+		<section id="data-analysis">
+			<h2>Data Analysis</h2>
+			<p>Master the skills of data analysis and visualization.</p>
+			<button>Explore Courses</button>
+		</section>
+		<section id="web-dev">
+			<h2>Web Development</h2>
+			<p>Build dynamic web applications and websites.</p>
+			<button>Explore Courses</button>
+		</section>
+		<section id="software-eng">
+			<h2>Software Engineering</h2>
+			<p>Learn the principles of software engineering and design.</p>
+			<button>Explore Courses</button>
+		</section>
+		<section id="software-career">
+			<h2>Software Career</h2>
+			<p>Explore career opportunities in the software industry.</p>
+			<button>Explore Courses</button>
+		</section>
+	</main>
+	<script src="script.js"></script>
 </body>
 </html>
+```
+CSS (styles.css):
+```
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+section {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	margin-top: 0;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #444;
+}
+```
+JavaScript (script.js):
+```
+// Add active class to nav links on click
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		link.classList.add("active");
+	});
+});
+```
